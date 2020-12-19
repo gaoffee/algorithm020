@@ -6,7 +6,7 @@ public class ReverseList {
         if (current == null) {
             return previous;
         }
-        final Node node = reverse(current.next, current);
+        Node node = reverse(current.next, current);
         current.next = previous;
         return node;
     }
